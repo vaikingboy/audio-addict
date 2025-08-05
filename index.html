@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Addict | Professional Sound Engineering & Studio</title>
+    
+    <!-- SEO Optimization: Meta tags for search engines -->
+    <meta name="description" content="Audio Addict is a professional sound engineering studio in Kalyan, offering high-quality mixing, mastering, and sound design services for artists and filmmakers.">
+    <meta name="keywords" content="audio addict, kalyan, thane, mumbai, sound engineering, mixing, mastering, sound design, audio production, recording studio, freelance sound engineer">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Audio Addict | Professional Sound Engineering & Studio">
+    <meta property="og:description" content="Your dedicated partner for world-class audio production in Kalyan. Specializing in mixing, mastering, and creative sound design.">
+    <meta property="og:url" content="https://vaikingboy.github.io/audio-addict/">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for smooth transitions and dark theme */
+        .nav-link:hover {
+            color: #10B981; /* Emerald-500 */
+        }
+        .section {
+            scroll-margin-top: 5rem; /* Adjust for fixed header */
+        }
+        .player-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        .player-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    
+    <!-- JSON-LD Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Audio Addict",
+      "image": "https://placehold.co/600x400/065F46/FFFFFF?text=Audio+Addict",
+      "url": "https://vaikingboy.github.io/audio-addict/",
+      "telephone": "+91XXXXXXXXXX",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[Your Studio Address]",
+        "addressLocality": "Kalyan",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "priceRange": "$$",
+      "servesCuisine": "Sound Engineering Services",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      ],
+      "description": "Audio Addict is a professional sound engineering studio in Kalyan, offering high-quality mixing, mastering, and sound design services for artists and filmmakers.",
+      "gstId": "27BAXPBE7186E1Z9"
+    }
+    </script>
+</head>
+<body class="bg-gray-950 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900 shadow-xl fixed w-full z-20">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-3xl font-extrabold text-emerald-400">AUDIO ADDICT</a>
+            <div class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="#home" class="nav-link transition-colors duration-300">Home</a>
+                <a href="#about" class="nav-link transition-colors duration-300">About</a>
+                <a href="#services" class="nav-link transition-colors duration-300">Services</a>
+                <a href="#portfolio" class="nav-link transition-colors duration-300">Portfolio</a>
+                <a href="#testimonials" class="nav-link transition-colors duration-300">Testimonials</a>
+                <a href="#contact" class="nav-link transition-colors duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (initially hidden) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 p-6 text-center shadow-lg">
+            <a href="#home" class="block py-3 text-xl text-white hover:text-emerald-400 font-medium">Home</a>
+            <a href="#about" class="block py-3 text-xl text-white hover:text-emerald-400 font-medium">About</a>
+            <a href="#services" class="block py-3 text-xl text-white hover:text-emerald-400 font-medium">Services</a>
+            <a href="#portfolio" class="block py-3 text-xl text-white hover:text-emerald-400 font-medium">Portfolio</a>
+            <a href="#testimonials" class="block py-3 text-xl text-white hover:text-emerald-400 font-medium">Testimonials</a>
+            <a href="#contact" class="block py-3 text-xl text-white hover:text-emerald-400 font-medium">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section (Hero) -->
+        <section id="home" class="section h-screen flex items-center justify-center text-center px-4 bg-gray-950">
+            <div class="max-w-5xl mx-auto">
+                <h1 class="text-5xl sm:text-6xl lg:text-8xl font-extrabold tracking-tight leading-none text-white mb-6 animate-fade-in-up">
+                    <span class="text-emerald-400">Audio Addict:</span> Your Studio in Kalyan
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-400 mb-10 max-w-2xl mx-auto animate-fade-in delay-200">
+                    A professional sound engineering studio offering mixing, mastering, and creative sound design for artists and media creators.
+                </p>
+                <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 text-white font-bold py-3 px-10 rounded-full shadow-lg text-lg transform hover:scale-105 animate-fade-in delay-500">
+                    Get a Quote
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section py-24 px-4 bg-gray-900">
+            <div class="container mx-auto max-w-5xl text-center">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-emerald-400">About Audio Addict</h2>
+                <p class="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                    Audio Addict is a dedicated sound engineering studio founded in Kalyan, Maharashtra. We provide a professional and acoustically treated environment for all your audio needs. Led by Vaibhav, an experienced sound engineer, we specialize in delivering high-quality results for local and international clients, both in our studio and through remote freelance work. Our mission is to elevate your sound with precision and passion.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section py-24 px-4 bg-gray-950">
+            <div class="container mx-auto text-center max-w-5xl">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-12 text-emerald-400">Our Services</h2>
+                <div class="grid md:grid-cols-3 gap-12">
+                    <!-- Service Card 1: Mixing -->
+                    <div class="bg-gray-800 p-10 rounded-3xl shadow-2xl hover:shadow-emerald-500/20 transform hover:-translate-y-2 transition-all duration-300">
+                        <i class="fas fa-sliders-h text-4xl text-emerald-500 mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Mixing</h3>
+                        <p class="text-gray-400">
+                            Professional multi-track mixing to balance and enhance your music, bringing clarity and power to every element.
+                        </p>
+                    </div>
+                    <!-- Service Card 2: Mastering -->
+                    <div class="bg-gray-800 p-10 rounded-3xl shadow-2xl hover:shadow-emerald-500/20 transform hover:-translate-y-2 transition-all duration-300">
+                        <i class="fas fa-magic text-4xl text-emerald-500 mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Mastering</h3>
+                        <p class="text-gray-400">
+                            The final polish for your tracks, optimizing them for consistent playback across all platforms.
+                        </p>
+                    </div>
+                    <!-- Service Card 3: Sound Design -->
+                    <div class="bg-gray-800 p-10 rounded-3xl shadow-2xl hover:shadow-emerald-500/20 transform hover:-translate-y-2 transition-all duration-300">
+                        <i class="fas fa-headphones-alt text-4xl text-emerald-500 mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Sound Design</h3>
+                        <p class="text-gray-400">
+                            Creating bespoke soundscapes, effects, and foley for films, games, and other media.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section py-24 px-4 bg-gray-900">
+            <div class="container mx-auto text-center max-w-6xl">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-12 text-emerald-400">Portfolio</h2>
+                <p class="text-lg text-gray-300 mb-12">
+                    A selection of projects demonstrating our commitment to quality.
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Portfolio Item 1 (Audio) -->
+                    <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-white">Project Title 1: Mastering</h3>
+                        <!-- Placeholder for audio player -->
+                        <div class="player-container">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/300481084&color=%2310b981&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <p class="mt-4 text-gray-400">A high-fidelity master for an electronic music track.</p>
+                    </div>
+                    <!-- Portfolio Item 2 (Video) -->
+                    <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-white">Project Title 2: Sound Design</h3>
+                        <!-- Placeholder for video player -->
+                        <div class="player-container">
+                             <iframe src="https://player.vimeo.com/video/76979871?h=8272103a19" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="mt-4 text-gray-400">Sound design and audio post-production for a short film.</p>
+                    </div>
+                    <!-- Portfolio Item 3 (Audio) -->
+                    <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-white">Project Title 3: Mixing</h3>
+                        <!-- Placeholder for another audio player -->
+                        <div class="player-container">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/114429996&color=%2310b981&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <p class="mt-4 text-gray-400">A warm and spacious mix for an acoustic song.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section py-24 px-4 bg-gray-950">
+            <div class="container mx-auto text-center max-w-4xl">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-12 text-emerald-400">What Clients Say</h2>
+                <div class="space-y-12">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl">
+                        <p class="text-xl italic text-gray-300 mb-4 leading-relaxed">
+                            "Audio Addict's mastering work elevated my album to a new level of professionalism. The attention to detail and passion for sound is unmatched."
+                        </p>
+                        <p class="text-lg font-semibold text-white">- Artist Name</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl">
+                        <p class="text-xl italic text-gray-300 mb-4 leading-relaxed">
+                            "The sound design created for our short film was breathtaking. It completely transformed the cinematic experience."
+                        </p>
+                        <p class="text-lg font-semibold text-white">- Filmmaker Name</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section py-24 px-4 bg-gray-900">
+            <div class="container mx-auto text-center max-w-2xl">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-emerald-400">Get in Touch</h2>
+                <p class="text-lg text-gray-300 mb-12">
+                    Ready to start your next project? Let's connect and discuss your audio needs.
+                </p>
+                <!-- Contact Form (requires a backend service to function) -->
+                <form class="space-y-6 text-left" action="https://formspree.io/f/your-formspree-id" method="POST">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-white">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-white shadow-sm focus:border-emerald-500 focus:ring-emerald-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-white">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-white shadow-sm focus:border-emerald-500 focus:ring-emerald-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-white">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-white shadow-sm focus:border-emerald-500 focus:ring-emerald-500"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-emerald-500 hover:bg-emerald-600 transition-colors duration-300 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-12 text-center text-gray-500">
+        <div class="container mx-auto px-4">
+            <!-- Social Media Links & Resume Button -->
+            <div class="flex justify-center space-x-6 mb-8 text-2xl">
+                <!-- IMPORTANT: Replace with your actual links -->
+                <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/yourprofile" target="_blank" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/yourprofile" target="_blank" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <!-- Download Resume Button -->
+            <div class="mb-8">
+                <!-- IMPORTANT: Replace href with the direct URL to your resume PDF -->
+                <a href="your-resume.pdf" download class="bg-gray-800 hover:bg-gray-700 transition-colors duration-300 text-white font-semibold py-3 px-6 rounded-full shadow-md">
+                    <i class="fas fa-file-download mr-2"></i> Download Resume
+                </a>
+            </div>
+
+            <p class="text-sm">&copy; 2025 Audio Addict. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for the mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a nav link is clicked
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
